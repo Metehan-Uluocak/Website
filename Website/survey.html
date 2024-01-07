@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer Satisfaction Form
+    </title>
+    <script>
+        var isRed = true;
+            function renkDegistir() {
+                var color = isRed ? "red" : "white";
+                document.getElementById('redText').style.color = color;
+                document.getElementById('redText1').style.color = color;
+                document.getElementById('redText2').style.color = color;
+                isRed = !isRed; 
+            };
+            window.onload = setInterval(renkDegistir,500)
+    </script>
+    <script src="https://cdn.elinsoft.com/kar.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        body {
+            background:  url(./images/background.jpg) center fixed; 
+            background-size: cover;
+            font-family: Arial;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            text-align: center; 
+            margin: 0;
+        }
+        h2{
+            color:black;
+    }
+        h2:hover a{
+            color: #ffcc30;
+    }
+        h2 a{
+            color:black;
+            text-decoration: none;
+        }
+        .car-details {
+            color: black;
+            flex: 3;                /*Uzunlukla alakalıymış*/
+            display: flex;
+            flex-direction: column; /*Bloktaki metni ortaladı*/
+    }
+    
+   
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>   
+     <br>
+    <div class="navbar">
+        <a href="homepage.html" target="_blank">Home</a>
+        <a href="aboutme.html" target="_blank">About Me</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="survey.html">Form</a>
+        <a href="anket.html" style="margin-right: auto;"><img src="./icons/tricon.png" style="width: 15px; height: 12px;" alt="Turkish Icon"></a>
+    </div>
+
+    <h1 class="navbar"><i>CUSTOMER SATISFACTION FORM</i></h1>
+    <br><br><br>
+
+    <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <br><br><br><br>
+
+        <label for="question1">Did you like our gallery?</label>
+        <br><br>
+        <label><input type="radio" name="question1" value="yes"> Yes</label>
+        <label><input type="radio" name="question1" value="no"> No</label>
+        <br><br>
+
+        <label for="question2">Did you find your dream car in our gallery?</label>
+        <br><br>
+        <label><input type="radio" name="question2" value="yes"> Yes</label>
+        <label><input type="radio" name="question2" value="no"> No</label>
+        <br><br>
+
+        <label for="question3">Have you experienced any issues with our gallery representatives?</label>
+        <br><br>
+        <label><input type="radio" name="question3" value="yes"> Yes</label>
+        <label><input type="radio" name="question3" value="no"> No</label>
+        <br><br>
+
+        <label for="question4">Do you consider sharing our gallery on your social media accounts?</label>
+        <br><br>
+        <label><input type="radio" name="question4" value="yes"> Yes</label>
+        <label><input type="radio" name="question4" value="no"> No</label>
+        <br><br>
+
+        <label for="question5">Would you recommend our gallery to others?</label>
+        <br><br>
+        <label><input type="radio" name="question5" value="yes"> Yes</label>
+        <label><input type="radio" name="question5" value="no"> No</label>
+        <br><br>
+
+        <label for="subject">Additional Comments:</label>
+        <select id="subject" name="subject" required>
+            <option value="general">General</option>
+            <option value="support">Support</option>
+            <option value="suggestion">Suggestion</option>
+        </select><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="10" cols="50" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+     
+
+
+</body>
+</html>

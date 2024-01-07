@@ -1,0 +1,58 @@
+.navbar {
+    background-color: rgb(51, 51, 51, 0.8); 
+    text-align: center;
+    padding: 10px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Navbardaki metinler arası boşluk*/
+}
+.navbar a:hover {
+    color: #ffcc00; 
+}
+
+.hakkimdaBaslik{
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+}
+.iletisimBaslik{
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+}
+
+.car-block {
+    display: flex;        
+    margin: 30px auto; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255);
+    max-width: 1000px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0);
+}
+
+.car-block:hover {
+    background-color: rgba(255, 255, 255);
+}
+
+.car-image {
+    flex: 2;
+    border-radius: 8px;
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.5s;
+}
+
+.car-image:hover img {
+    opacity: 0.5;
+}
+
+.text{
+    font-size: 32px;
+    color: white;
+}
+
